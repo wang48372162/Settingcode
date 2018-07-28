@@ -15,6 +15,7 @@
 * alias.co=checkout
 * alias.b=branch
 * alias.m=merge
+* alias.mnf=merge --no-ff
 * alias.rs=reset
 * alias.rsp=reset HEAD~1
 * alias.rsh=reset HEAD --hard
@@ -40,6 +41,7 @@
     git config --global alias.co "checkout"
     git config --global alias.b "branch"
     git config --global alias.m "merge"
+    git config --global alias.mnf "merge --no-ff"
     git config --global alias.rs "reset"
     git config --global alias.rsp "reset HEAD~1"
     git config --global alias.rsh "reset HEAD --hard"
