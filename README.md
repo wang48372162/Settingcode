@@ -18,6 +18,7 @@
 * alias.mnf=merge --no-ff
 * alias.rs=reset
 * alias.rsp=reset HEAD~1
+* alias.rsh=reset HEAD --hard
 * alias.rb=rebase -i
 * alias.rbc=rebase --continue
 * alias.rba=rebase --abort
@@ -43,6 +44,7 @@
     git config --global alias.mnf "merge --no-ff"
     git config --global alias.rs "reset"
     git config --global alias.rsp "reset HEAD~1"
+    git config --global alias.rsh "reset HEAD --hard"
     git config --global alias.rb "rebase -i"
     git config --global alias.rbc "rebase --continue"
     git config --global alias.rba "rebase --abort"
