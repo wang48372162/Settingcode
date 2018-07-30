@@ -26,6 +26,15 @@
 * alias.r=remote -v
 * alias.ra=remote add
 * alias.rr=remote remove
+* alias.f=flow
+* alias.ffs=flow feature start
+* alias.fff=flow feature finish
+* alias.frs=flow release start
+* alias.frf=flow release finish
+* alias.fhs=flow hotfix start
+* alias.fhf=flow hotfix finish
+* alias.fbs=flow bugfix start
+* alias.fbf=flow bugfix finish
 
 ### Set Git Alias
     git config --global alias.cf "config"
@@ -52,3 +61,12 @@
     git config --global alias.r "remote -v"
     git config --global alias.ra "remote add"
     git config --global alias.rr "remote remove"
+    git config --global alias.f "flow"
+    git config --global alias.ffs "flow feature start"
+    git config --global alias.fff "flow feature finish"
+    git config --global alias.frs "flow release start"
+    git config --global alias.frf "flow release finish"
+    git config --global alias.fhs "flow hotfix start"
+    git config --global alias.fhf "flow hotfix finish"
+    git config --global alias.fbs "flow bugfix start"
+    git config --global alias.fbf "flow bugfix finish"
