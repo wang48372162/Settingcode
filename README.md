@@ -1,5 +1,63 @@
 # Settingcode
 
+## VS Code settings
+```js
+{
+    // 工作台
+    "workbench.startupEditor": "none",
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.editor.closeEmptyGroups": true,
+    "breadcrumbs.enabled": true,
+
+    // Editor
+    "editor.multiCursorModifier": "ctrlCmd",
+    "editor.snippetSuggestions": "top",
+    "editor.formatOnPaste": true,
+    "editor.mouseWheelZoom": true,
+    "editor.wordWrap": "on",
+    "editor.fontFamily": "Consolas, 'Courier New', monospace, 'Microsoft JhengHei'",
+    "editor.tabSize": 2,
+    "window.zoomLevel": 1,
+    "editor.fontSize": 14,
+
+    // Terminal (Commend line)
+    "terminal.integrated.shell.windows": "C:\\Windows\\System32\\cmd.exe",
+    "terminal.integrated.rendererType": "dom",
+
+    // 擴充功能
+    "extensions.ignoreRecommendations": true,
+
+    // Css
+    "css.remoteStyleSheets": [
+        "https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css",
+        "https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+    ],
+
+    // Sass
+    "files.associations": {
+        "*.sass": "sass"
+    },
+
+    // Emmet
+    "emmet.triggerExpansionOnTab": true,
+    "emmet.includeLanguages": {
+        "blade": "html"
+    },
+
+    // PHP
+    "php.validate.executablePath": "C:/xampp/php/php.exe",
+    "php.executablePath": "C:/xampp/php/php.exe",
+    "php.suggest.basic": false,
+    "php.validate.enable": false,
+
+    // Vue
+    "vetur.validation.template": false,
+
+    // Markdown
+    "markdown.preview.fontFamily": "-apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', 'HelveticaNeue-Light', 'Ubuntu', 'Droid Sans', sans-serif, 'Microsoft JhengHei'"
+}
+```
+
 ## Git Alias (ycs)
 
 * alias.cf=config
