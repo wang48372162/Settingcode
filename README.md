@@ -7,18 +7,23 @@
     "workbench.startupEditor": "none",
     "workbench.iconTheme": "material-icon-theme",
     "workbench.editor.closeEmptyGroups": true,
+    "workbench.editor.restoreViewState": false,
     "breadcrumbs.enabled": true,
+
+    // 視窗
+    "window.titleBarStyle": "custom",
+    "window.zoomLevel": 1,
 
     // Editor
     "editor.multiCursorModifier": "ctrlCmd",
     "editor.snippetSuggestions": "top",
     "editor.formatOnPaste": true,
-    "editor.mouseWheelZoom": true,
+    "editor.mouseWheelZoom": false,
     "editor.wordWrap": "on",
     "editor.fontFamily": "Consolas, 'Courier New', monospace, 'Microsoft JhengHei'",
     "editor.tabSize": 2,
-    "window.zoomLevel": 1,
     "editor.fontSize": 14,
+    "editor.suggest.localityBonus": true,
 
     // Terminal (Commend line)
     "terminal.integrated.shell.windows": "C:\\Windows\\System32\\cmd.exe",
@@ -27,7 +32,10 @@
     // 擴充功能
     "extensions.ignoreRecommendations": true,
 
-    // Css
+    // HTML
+    "html.format.enable": false,
+
+    // CSS
     "css.remoteStyleSheets": [
         "https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css",
         "https://use.fontawesome.com/releases/v5.2.0/css/all.css"
@@ -38,15 +46,8 @@
         "*.sass": "sass"
     },
 
-    // Emmet
-    "emmet.triggerExpansionOnTab": true,
-    "emmet.includeLanguages": {
-        "blade": "html"
-    },
-
     // PHP
     "php.validate.executablePath": "C:/xampp/php/php.exe",
-    "php.executablePath": "C:/xampp/php/php.exe",
     "php.suggest.basic": false,
     "php.validate.enable": false,
 
@@ -54,7 +55,16 @@
     "vetur.validation.template": false,
 
     // Markdown
-    "markdown.preview.fontFamily": "-apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', 'HelveticaNeue-Light', 'Ubuntu', 'Droid Sans', sans-serif, 'Microsoft JhengHei'"
+    "markdown.preview.fontFamily": "-apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', 'HelveticaNeue-Light', 'Ubuntu', 'Droid Sans', sans-serif, 'Microsoft JhengHei'",
+
+    // Emmet
+    "emmet.triggerExpansionOnTab": true,
+    "emmet.includeLanguages": {
+        "blade": "html",
+        "javascript": "javascriptreact",
+        "vue-html": "html",
+        "vue": "html"
+    }
 }
 ```
 
@@ -75,8 +85,9 @@
 * alias.m=merge
 * alias.mnf=merge --no-ff
 * alias.rs=reset
-* alias.rsp=reset HEAD~1
-* alias.rsh=reset HEAD --hard
+* alias.rs0h=reset HEAD --hard
+* alias.rs1=reset HEAD~1
+* alias.rs1h=reset HEAD~1 --hard
 * alias.rb=rebase -i
 * alias.rbc=rebase --continue
 * alias.rba=rebase --abort
@@ -110,8 +121,9 @@
     git config --global alias.m "merge"
     git config --global alias.mnf "merge --no-ff"
     git config --global alias.rs "reset"
-    git config --global alias.rsp "reset HEAD~1"
-    git config --global alias.rsh "reset HEAD --hard"
+    git config --global alias.rs0h "reset HEAD --hard"
+    git config --global alias.rs1 "reset HEAD~1"
+    git config --global alias.rs1h "reset HEAD~1 --hard"
     git config --global alias.rb "rebase -i"
     git config --global alias.rbc "rebase --continue"
     git config --global alias.rba "rebase --abort"
