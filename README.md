@@ -13,9 +13,6 @@
     // 視窗
     "window.titleBarStyle": "custom",
     "window.zoomLevel": 1,
-
-    // Editor
-    "editor.multiCursorModifier": "ctrlCmd",
     "editor.snippetSuggestions": "top",
     "editor.formatOnPaste": true,
     "editor.mouseWheelZoom": false,
@@ -24,13 +21,23 @@
     "editor.tabSize": 2,
     "editor.fontSize": 14,
     "editor.suggest.localityBonus": true,
+    "editor.multiCursorModifier": "ctrlCmd",
 
     // Terminal (Commend line)
-    "terminal.integrated.shell.windows": "C:\\Windows\\System32\\cmd.exe",
+    "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
+    "terminal.integrated.shellArgs.windows": [
+        "--login",
+        "-i"
+    ],
     "terminal.integrated.rendererType": "dom",
 
     // 擴充功能
     "extensions.ignoreRecommendations": true,
+    "extensions.autoUpdate": false,
+
+    "files.associations": {
+        "*.sass": "sass"
+    },
 
     // HTML
     "html.format.enable": false,
@@ -38,18 +45,13 @@
     // CSS
     "css.remoteStyleSheets": [
         "https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css",
-        "https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+        "https://use.fontawesome.com/releases/v5.6.1/css/all.css"
     ],
 
-    // Sass
-    "files.associations": {
-        "*.sass": "sass"
-    },
-
     // PHP
-    "php.validate.executablePath": "C:/xampp/php/php.exe",
     "php.suggest.basic": false,
-    "php.validate.enable": false,
+    "php.validate.executablePath": "C:/xampp/php/php.exe",
+    "namespaceResolver.sortAlphabetically": true,
 
     // Vue
     "vetur.validation.template": false,
@@ -60,7 +62,6 @@
     // Emmet
     "emmet.triggerExpansionOnTab": true,
     "emmet.includeLanguages": {
-        "blade": "html",
         "javascript": "javascriptreact",
         "vue-html": "html",
         "vue": "html"
