@@ -111,3 +111,11 @@ git config --global alias.fhf "flow hotfix finish"
 git config --global alias.fbs "flow bugfix start"
 git config --global alias.fbf "flow bugfix finish"
 ```
+
+## Use Yarn Install Global Commonly Used Packages
+
+```
+yarn global add @vue/cli
+yarn global add eslint
+yarn global add npm-check-updates
+```
