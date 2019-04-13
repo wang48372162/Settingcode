@@ -18,15 +18,21 @@
     "editor.mouseWheelZoom": false,
     "editor.wordWrap": "on",
     "editor.fontFamily": "Consolas, 'Courier New', monospace, 'Microsoft JhengHei'",
+    "editor.fontLigatures": true,
     "editor.tabSize": 2,
     "editor.fontSize": 14,
     "editor.suggest.localityBonus": true,
     "editor.multiCursorModifier": "ctrlCmd",
 
     // Terminal (Commend line)
-    "terminal.integrated.shell.windows": "C:\\Program Files\\ANSICON\\x64\\ansicon.exe",
+    // "terminal.integrated.shell.windows": "C:\\Program Files\\ANSICON\\x64\\ansicon.exe",
+    // "terminal.integrated.shellArgs.windows": [
+    //     "C:\\Program Files\\Git\\bin\\bash.exe",
+    //     "--login",
+    //     "-i"
+    // ],
+    "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
     "terminal.integrated.shellArgs.windows": [
-        "C:\\Program Files\\Git\\bin\\bash.exe",
         "--login",
         "-i"
     ],
@@ -49,6 +55,9 @@
         "https://use.fontawesome.com/releases/v5.7.2/css/all.css"
     ],
 
+    // Javascript
+    "javascript.updateImportsOnFileMove.enabled": "always",
+
     // PHP
     "php.suggest.basic": false,
     "php.validate.executablePath": "D:/xampp/php/php.exe",
@@ -62,11 +71,7 @@
 
     // Emmet
     "emmet.triggerExpansionOnTab": true,
-    "emmet.includeLanguages": {
-        "javascript": "javascriptreact",
-        "vue-html": "html",
-        "vue": "html"
-    }
+    "emmet.excludeLanguages": []
 }
 ```
 
