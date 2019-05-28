@@ -52,7 +52,7 @@
     // CSS
     "css.remoteStyleSheets": [
         "https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css",
-        "https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        "https://use.fontawesome.com/releases/v5.8.2/css/all.css"
     ],
 
     // Javascript
@@ -118,7 +118,7 @@ git config --global alias.fbs "flow bugfix start"
 git config --global alias.fbf "flow bugfix finish"
 ```
 
-## Use Yarn Install Global Commonly Used Packages
+## Install Global Yarn Packages
 
 ```
 yarn global add @vue/cli
