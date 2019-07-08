@@ -8,13 +8,11 @@
     "workbench.iconTheme": "material-icon-theme",
     "workbench.editor.closeEmptyGroups": true,
     "workbench.editor.restoreViewState": false,
-    "breadcrumbs.enabled": true,
 
     // 視窗
     "window.titleBarStyle": "custom",
     "window.zoomLevel": 1,
     "editor.snippetSuggestions": "top",
-    "editor.formatOnPaste": true,
     "editor.mouseWheelZoom": false,
     "editor.wordWrap": "on",
     "editor.fontFamily": "Consolas, 'Courier New', monospace, 'Microsoft JhengHei'",
@@ -23,6 +21,8 @@
     "editor.fontSize": 14,
     "editor.suggest.localityBonus": true,
     "editor.multiCursorModifier": "ctrlCmd",
+    "diffEditor.ignoreTrimWhitespace": false,
+    "diffEditor.renderSideBySide": false,
 
     // Terminal (Commend line)
     // "terminal.integrated.shell.windows": "C:\\Program Files\\ANSICON\\x64\\ansicon.exe",
