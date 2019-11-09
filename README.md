@@ -3,75 +3,87 @@
 ## VS Code settings
 ```js
 {
-    // 工作台
-    "workbench.startupEditor": "none",
-    "workbench.iconTheme": "material-icon-theme",
-    "workbench.editor.closeEmptyGroups": true,
-    "workbench.editor.restoreViewState": false,
+  // 工作台
+  "workbench.startupEditor": "none",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.editor.closeEmptyGroups": true,
+  "workbench.editor.restoreViewState": false,
 
-    // 視窗
-    "window.titleBarStyle": "custom",
-    "window.zoomLevel": 1,
-    "editor.snippetSuggestions": "top",
-    "editor.mouseWheelZoom": false,
-    "editor.wordWrap": "on",
-    "editor.fontFamily": "Consolas, 'Courier New', monospace, 'Microsoft JhengHei'",
-    "editor.fontLigatures": true,
-    "editor.tabSize": 2,
-    "editor.fontSize": 14,
-    "editor.suggest.localityBonus": true,
-    "editor.multiCursorModifier": "ctrlCmd",
-    "diffEditor.ignoreTrimWhitespace": false,
-    "diffEditor.renderSideBySide": false,
+  // 視窗
+  "window.titleBarStyle": "custom",
+  "window.zoomLevel": 1,
+  "editor.snippetSuggestions": "top",
+  "editor.mouseWheelZoom": false,
+  "editor.wordWrap": "on",
+  "editor.fontFamily": "Consolas",
+  "editor.fontLigatures": true,
+  "editor.tabSize": 2,
+  "editor.fontSize": 14,
+  "editor.suggest.localityBonus": true,
+  "editor.multiCursorModifier": "ctrlCmd",
+  "diffEditor.ignoreTrimWhitespace": false,
+  "diffEditor.renderSideBySide": false,
 
-    // Terminal (Commend line)
-    // "terminal.integrated.shell.windows": "C:\\Program Files\\ANSICON\\x64\\ansicon.exe",
-    // "terminal.integrated.shellArgs.windows": [
-    //     "C:\\Program Files\\Git\\bin\\bash.exe",
-    //     "--login",
-    //     "-i"
-    // ],
-    "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
-    "terminal.integrated.shellArgs.windows": [
-        "--login",
-        "-i"
-    ],
-    "terminal.integrated.rendererType": "dom",
+  // Terminal (Commend line)
+  // "terminal.integrated.shell.windows": "C:\\Program Files\\ANSICON\\x64\\ansicon.exe",
+  // "terminal.integrated.shellArgs.windows": [
+  //   "C:\\Program Files\\Git\\bin\\bash.exe",
+  //   "--login",
+  //   "-i"
+  // ],
+  "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
+  "terminal.integrated.shellArgs.windows": [
+    "--login",
+    "-i"
+  ],
+  "terminal.integrated.rendererType": "dom",
 
-    // 擴充功能
-    "extensions.ignoreRecommendations": true,
-    "extensions.autoUpdate": false,
+  // 擴充功能
+  "extensions.ignoreRecommendations": true,
+  "extensions.autoUpdate": false,
 
-    "files.associations": {
-        "*.sass": "sass"
-    },
+  "files.associations": {
+    "*.sass": "sass"
+  },
 
-    // HTML
-    "html.format.enable": false,
+  // HTML
+  "html.format.enable": false,
 
-    // CSS
-    "css.remoteStyleSheets": [
-        "https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css",
-        "https://use.fontawesome.com/releases/v5.8.2/css/all.css"
-    ],
+  // CSS
+  "css.remoteStyleSheets": [
+    "https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css",
+    "https://use.fontawesome.com/releases/v5.11.2/css/all.css"
+  ],
+  "stylelint.config": {
+    "rules": {
+      "at-rule-no-unknown": [true, {
+        "ignoreAtRules": [
+          "tailwind",
+          "apply",
+          "variants",
+          "responsive",
+          "screen"
+        ]
+      }],
+      "declaration-block-trailing-semicolon": null,
+      "no-descending-specificity": null
+    }
+  },
 
-    // Javascript
-    "javascript.updateImportsOnFileMove.enabled": "always",
+  // Javascript
+  "javascript.updateImportsOnFileMove.enabled": "always",
 
-    // PHP
-    "php.suggest.basic": false,
-    "php.validate.executablePath": "D:/xampp/php/php.exe",
-    "namespaceResolver.sortAlphabetically": true,
+  // PHP
+  "php.suggest.basic": false,
+  "php.validate.executablePath": "D:/xampp/php/php.exe",
+  "namespaceResolver.sortAlphabetically": true,
 
-    // Vue
-    "vetur.validation.template": false,
+  // Vue
+  "vetur.validation.template": false,
 
-    // Markdown
-    "markdown.preview.fontFamily": "-apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', 'HelveticaNeue-Light', 'Ubuntu', 'Droid Sans', sans-serif, 'Microsoft JhengHei'",
-
-    // Emmet
-    "emmet.triggerExpansionOnTab": true,
-    "emmet.excludeLanguages": []
+  // Emmet
+  "emmet.triggerExpansionOnTab": true,
+  "emmet.excludeLanguages": []
 }
 ```
 
