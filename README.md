@@ -3,11 +3,14 @@
 ## VS Code settings
 ```js
 {
-  // 工作台
-  "workbench.startupEditor": "none",
   "workbench.iconTheme": "material-icon-theme",
+  "workbench.startupEditor": "none",
   "workbench.editor.closeEmptyGroups": true,
   "workbench.editor.restoreViewState": false,
+  "workbench.editor.scrollToSwitchTabs": true,
+  "workbench.editor.enablePreview": true,
+  "workbench.activityBar.visible": true,
+  "workbench.statusBar.visible": true,
 
   // 視窗
   "window.titleBarStyle": "custom",
@@ -19,8 +22,10 @@
   "editor.fontLigatures": true,
   "editor.tabSize": 2,
   "editor.fontSize": 14,
+  "editor.tabCompletion": "onlySnippets",
   "editor.suggest.localityBonus": true,
   "editor.multiCursorModifier": "ctrlCmd",
+  "explorer.openEditors.visible": 0,
   "diffEditor.ignoreTrimWhitespace": false,
   "diffEditor.renderSideBySide": false,
 
@@ -36,7 +41,7 @@
     "--login",
     "-i"
   ],
-  "terminal.integrated.rendererType": "dom",
+  "terminal.integrated.windowsEnableConpty": false,
 
   // 擴充功能
   "extensions.ignoreRecommendations": true,
@@ -54,6 +59,7 @@
     "https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css",
     "https://use.fontawesome.com/releases/v5.11.2/css/all.css"
   ],
+  "tailwindCSS.emmetCompletions": true,
   "stylelint.config": {
     "rules": {
       "at-rule-no-unknown": [true, {
@@ -75,15 +81,14 @@
 
   // PHP
   "php.suggest.basic": false,
-  "php.validate.executablePath": "D:/xampp/php/php.exe",
+  "php.validate.executablePath": "C:/xampp/php/php.exe",
   "namespaceResolver.sortAlphabetically": true,
 
   // Vue
   "vetur.validation.template": false,
 
   // Emmet
-  "emmet.triggerExpansionOnTab": true,
-  "emmet.excludeLanguages": []
+  "emmet.triggerExpansionOnTab": true
 }
 ```
 
