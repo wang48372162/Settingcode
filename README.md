@@ -87,6 +87,55 @@
 }
 ```
 
+## Git Config
+```ini
+[core]
+        autocrlf = true
+        pager = less -r
+[alias]
+        cf = config
+        cfl = config --list
+        s = status
+        a = add .
+        l = log
+        lo = log --oneline --graph
+        last = log -1 HEAD
+        c = commit
+        cm = commit -m
+        ca = commit --amend -m
+        can = commit --amend --no-edit
+        co = checkout
+        cp = cherry-pick
+        b = branch
+        m = merge
+        mnf = merge --no-ff
+        rs = reset
+        rs0h = reset HEAD --hard
+        rs1 = reset HEAD~1
+        rs1h = reset HEAD~1 --hard
+        rb = rebase
+        rbi = rebase -i
+        rbc = rebase --continue
+        rba = rebase --abort
+        rm = remote
+        r = remote -v
+        ra = remote add
+        rr = remote remove
+        p = push
+        pl = pull
+        f = flow
+        ffs = flow feature start
+        fff = flow feature finish
+        frs = flow release start
+        frf = flow release finish
+        fhs = flow hotfix start
+        fhf = flow hotfix finish
+        fbs = flow bugfix start
+        fbf = flow bugfix finish
+[init]
+        defaultBranch = main
+```
+
 ## Set Git Alias
 ```bash
 git config --global alias.cf "config"
