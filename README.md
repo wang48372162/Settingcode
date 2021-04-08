@@ -13,8 +13,8 @@
   "workbench.statusBar.visible": true,
 
   // 視窗
-  "window.titleBarStyle": "custom",
   "window.zoomLevel": 1,
+  "window.titleBarStyle": "custom",
   "editor.snippetSuggestions": "top",
   "editor.mouseWheelZoom": false,
   "editor.wordWrap": "on",
@@ -42,6 +42,9 @@
     "-i"
   ],
   "terminal.integrated.windowsEnableConpty": false,
+
+  // Git
+  "git.enableCommitSigning": true,
 
   // 擴充功能
   "extensions.ignoreRecommendations": true,
@@ -94,51 +97,61 @@
 
 ## Git Config
 ```ini
+[user]
+	email = yangchenshin77@gmail.com
+	name = Lucas Yang
+	signingkey = ECFAC77A
 [core]
-        autocrlf = true
-        pager = less -r
+	autocrlf = true
+	pager = less -r
 [alias]
-        cf = config
-        cfl = config --list
-        s = status
-        a = add .
-        l = log
-        lo = log --oneline --graph
-        last = log -1 HEAD
-        c = commit
-        cm = commit -m
-        ca = commit --amend -m
-        can = commit --amend --no-edit
-        co = checkout
-        cp = cherry-pick
-        b = branch
-        m = merge
-        mnf = merge --no-ff
-        rs = reset
-        rs0h = reset HEAD --hard
-        rs1 = reset HEAD~1
-        rs1h = reset HEAD~1 --hard
-        rb = rebase
-        rbi = rebase -i
-        rbc = rebase --continue
-        rba = rebase --abort
-        rm = remote
-        r = remote -v
-        ra = remote add
-        rr = remote remove
-        p = push
-        pl = pull
-        f = flow
-        ffs = flow feature start
-        fff = flow feature finish
-        frs = flow release start
-        frf = flow release finish
-        fhs = flow hotfix start
-        fhf = flow hotfix finish
-        fbs = flow bugfix start
-        fbf = flow bugfix finish
+	cf = config
+	cfl = config --list
+	s = status
+	a = add .
+	l = log
+	lo = log --oneline --graph
+	last = log -1 HEAD
+	c = commit
+	cm = commit -m
+	ca = commit --amend -m
+	can = commit --amend --no-edit
+	co = checkout
+	cp = cherry-pick
+	b = branch
+	m = merge
+	mnf = merge --no-ff
+	rs = reset
+	rs0h = reset HEAD --hard
+	rs1 = reset HEAD~1
+	rs1h = reset HEAD~1 --hard
+	rb = rebase
+	rbi = rebase -i
+	rbc = rebase --continue
+	rba = rebase --abort
+	rm = remote
+	r = remote -v
+	ra = remote add
+	rr = remote remove
+	p = push
+	pl = pull
+	f = flow
+	ffs = flow feature start
+	fff = flow feature finish
+	frs = flow release start
+	frf = flow release finish
+	fhs = flow hotfix start
+	fhf = flow hotfix finish
+	fbs = flow bugfix start
+	fbf = flow bugfix finish
 [init]
-        defaultBranch = main
+	defaultBranch = main
+[gpg]
+	program = C:\\Program Files (x86)\\GnuPG\\bin\\gpg.exe
+[commit]
+	gpgSign = true
+[tag]
+	gpgSign = true
 ```
 
 ## Set Git Alias
