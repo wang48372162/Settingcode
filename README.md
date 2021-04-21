@@ -26,8 +26,6 @@
   "editor.suggest.localityBonus": true,
   "editor.multiCursorModifier": "ctrlCmd",
   "explorer.openEditors.visible": 0,
-  "diffEditor.ignoreTrimWhitespace": false,
-  "diffEditor.renderSideBySide": false,
 
   // Terminal (Commend line)
   // "terminal.integrated.shell.windows": "C:\\Program Files\\ANSICON\\x64\\ansicon.exe",
@@ -37,11 +35,14 @@
   //   "-i"
   // ],
   "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
-  "terminal.integrated.shellArgs.windows": [
-    "--login",
-    "-i"
-  ],
+  "terminal.integrated.shellArgs.windows": ["--login", "-i"],
   "terminal.integrated.windowsEnableConpty": false,
+  "terminal.integrated.profiles.windows": {
+    "Git Bash": {
+      "path": "C:\\Program Files\\Git\\bin\\bash.exe",
+      "args": ["--login", "-i"]
+    }
+  },
 
   // Git
   "git.enableCommitSigning": true,
@@ -69,6 +70,7 @@
         "ignoreAtRules": [
           "tailwind",
           "apply",
+          "layer",
           "variants",
           "responsive",
           "screen"
@@ -100,7 +102,6 @@
 [user]
 	email = yangchenshin77@gmail.com
 	name = Lucas Yang
-	signingkey = ECFAC77A
 [core]
 	autocrlf = true
 	pager = less -r
@@ -149,9 +150,9 @@
 [gpg]
 	program = C:\\Program Files (x86)\\GnuPG\\bin\\gpg.exe
 [commit]
-	gpgSign = true
+	gpgSign = false
 [tag]
-	gpgSign = true
+	gpgSign = false
 ```
 
 ## Set Git Alias
