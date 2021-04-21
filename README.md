@@ -26,6 +26,8 @@
   "editor.suggest.localityBonus": true,
   "editor.multiCursorModifier": "ctrlCmd",
   "explorer.openEditors.visible": 0,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "diffEditor.renderSideBySide": false,
 
   // Terminal (Commend line)
   // "terminal.integrated.shell.windows": "C:\\Program Files\\ANSICON\\x64\\ansicon.exe",
