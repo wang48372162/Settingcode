@@ -11,6 +11,7 @@
   "workbench.editor.enablePreview": true,
   "workbench.activityBar.visible": true,
   "workbench.statusBar.visible": true,
+  "workbench.editor.untitled.hint": "hidden",
 
   // 視窗
   "window.zoomLevel": 1,
@@ -30,21 +31,17 @@
   "diffEditor.renderSideBySide": false,
 
   // Terminal (Commend line)
-  // "terminal.integrated.shell.windows": "C:\\Program Files\\ANSICON\\x64\\ansicon.exe",
-  // "terminal.integrated.shellArgs.windows": [
-  //   "C:\\Program Files\\Git\\bin\\bash.exe",
-  //   "--login",
-  //   "-i"
-  // ],
-  "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
-  "terminal.integrated.shellArgs.windows": ["--login", "-i"],
-  "terminal.integrated.windowsEnableConpty": false,
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
   "terminal.integrated.profiles.windows": {
     "Git Bash": {
       "path": "C:\\Program Files\\Git\\bin\\bash.exe",
       "args": ["--login", "-i"]
+    },
+    "CMD": {
+      "path": "C:\\Windows\\system32\\cmd.exe"
     }
   },
+  "terminal.integrated.windowsEnableConpty": false,
 
   // Git
   "git.enableCommitSigning": true,
